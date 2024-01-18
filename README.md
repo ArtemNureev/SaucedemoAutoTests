@@ -1,3 +1,4 @@
+Проект по тестированию. пример. Язык C# \Служба СОКПО\
 Данные для теста:
 url: https://www.saucedemo.com/
 пользователь: performance_glitch_user
