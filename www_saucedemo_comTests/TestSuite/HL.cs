@@ -34,6 +34,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 1 Авторизоваться в приложении под указанной учетной записью
         public void AutoriseIndex()
         {
+            Console.WriteLine("Авторизация в приложении под указанной учетной записью");
             var mainMenu = new AutorizationPageObject(_webDriver);
             mainMenu.Autorise();
             Assert.IsNotNull(mainMenu);
@@ -45,6 +46,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 2 Отсортировать товары High to Low, проверка.
         public void SortPricesAscending()
         {
+            Console.WriteLine("2. Сортировка High to Low");
             /// Получение списка цен на товары
             IList<IWebElement> priceElements = _webDriver.FindElements(By.XPath("//div[@class='inventory_item_price']"));
             List<double> prices = new List<double>();

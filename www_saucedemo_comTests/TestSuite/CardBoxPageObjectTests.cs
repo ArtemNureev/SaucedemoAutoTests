@@ -39,6 +39,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 1 Авторизоваться в приложении под указанной учетной записью
         public void AutoriseIndex()
         {
+            Console.WriteLine("Авторизация в приложении под указанной учетной записью");
             var mainMenu = new AutorizationPageObject(_webDriver);
             mainMenu.Autorise();
             Assert.IsNotNull(mainMenu);
@@ -53,6 +54,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 2 Добавить товар Sauce Labs Fleece Jacket в корзину (нажать кнопку ADD TO CART)
         public void DoItemsToCart1()
         {
+            Console.WriteLine("2. Добавление товара Sauce Labs Fleece Jacket в корзину");
             var mainMenu = new MainMenuPageObject(_webDriver);
             mainMenu.Add_to_CartButton1();
             Assert.IsNotNull(mainMenu);
@@ -66,6 +68,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 3  Перейти в корзину нажатием кнопки сверху в правом углу в виде корзины
         public void DoPress_CartButton()
         {
+            Console.WriteLine("3. Переход в корзину");
             var mainMenu = new MainMenuPageObject(_webDriver);
             mainMenu.Press_CartButton();
             Assert.IsNotNull(mainMenu);
@@ -79,6 +82,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 4    Нажать кнопку CONTINUE SHOPPING
         public void CartBOXbuttonContinue()
         {
+            Console.WriteLine("4. Нажатие кнопки Продолжить покупки");
             var mainMenu = new CardBoxPageObject(_webDriver);
             mainMenu.ContinueShoping();
             Assert.IsNotNull(mainMenu);
@@ -91,6 +95,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 5 Добавить товар Sauce Labs Bolt T-Shirt в корзину (нажать кнопку ADD TO CART)
         public void DoItemsToCard2()
         {
+            Console.WriteLine("5. Добавление товара Sauce Labs Bolt T-Shirt в корзину");
             var mainMenu = new MainMenuPageObject(_webDriver);
             mainMenu.Add_to_CartButton2();
             Assert.IsNotNull(mainMenu);
@@ -103,6 +108,7 @@ namespace www_saucedemo_comTests.TestSuite
         /// 6 Перейти в корзину нажатием кнопки сверху в правом углу в виде корзины
         public void DoPress_CartButton2()
         {
+            Console.WriteLine("6. Переход в корзину");
             var mainMenu = new MainMenuPageObject(_webDriver);
             mainMenu.Press_CartButton();
             Assert.IsNotNull(mainMenu);
