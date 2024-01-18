@@ -31,6 +31,7 @@ namespace www_saucedemo_comTests.TestSuite
         [Test]
         public void AutorizePerformance_glitch_user()
         {
+            Console.WriteLine("Авторизация в приложении под указанной учетной записью");
             var mainMenu = new AutorizationPageObject(_webDriver);
             mainMenu
             .Autorise();
